@@ -29,7 +29,7 @@ const Search = () => {
 				<button type="submit" className="btn btn-dark btn-block">Search</button>
 
 				{users.length > 0 &&
-					<button className="btn btn-light btn-block" onClick={clearUsers}>Clear</button>
+					<button className="btn btn-light btn-block btn-clear" onClick={clearUsers}>Clear</button>
 				}
 			</form>
 		</div>
