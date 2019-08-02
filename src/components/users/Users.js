@@ -14,17 +14,11 @@ const Users = () => {
 
 	return (
 		loading ? <Spinner /> : (
-			<div style={userStyle}>
+			<div className="grid-3">
 				{usersList}
 			</div >
 		)
 	)
 }
-
-const userStyle = {
-	display: 'grid',
-	gridTemplateColumns: 'repeat(3, 1fr)',
-	gridGap: '1rem'
-};
 
 export default Users
