@@ -3,10 +3,8 @@ import GithubContext from '../../context/github/githubContext';
 import AlertContext from '../../context/alert/alertContext';
 
 const Search = () => {
-	const githubContext = useContext(GithubContext);
-	const { users, searchUsers, clearUsers } = githubContext;
-	const alertContext = useContext(AlertContext);
-	const { setAlert } = alertContext;
+	const { users, searchUsers, clearUsers } = useContext(GithubContext);
+	const { setAlert } = useContext(AlertContext);
 
 	const [text, setText] = useState('');
 
