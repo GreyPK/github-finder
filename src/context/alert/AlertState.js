@@ -8,10 +8,7 @@ import {
 
 const AlertState = props => {
 	const initialState = null;
-
 	const [state, dispatch] = useReducer(AlertReducer, initialState);
-
-
 
 	const setAlert = (msg, type) => {
 		dispatch({ type: SET_ALERT, payload: { msg, type } });
