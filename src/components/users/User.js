@@ -1,20 +1,20 @@
-import React, { useEffect, useContext, Fragment } from 'react';
-import Spinner from '../layout/Spinner';
-import Repos from '../repos/Repos';
-import { Link } from 'react-router-dom';
-import GithubContext from '../../context/github/githubContext';
+import React, { useEffect, useContext, Fragment } from 'react'
+import Spinner from '../layout/Spinner'
+import Repos from '../repos/Repos'
+import { Link } from 'react-router-dom'
+import GithubContext from '../../context/github/githubContext'
 
 
 const User = ({ match }) => {
-	const { user, getUser, loading, repos, getUserRepos } = useContext(GithubContext);
+	const { user, getUser, loading, repos, getUserRepos } = useContext(GithubContext)
 
 	useEffect(() => {
-		getUser(match.params.login);
-		getUserRepos(match.params.login);
+		getUser(match.params.login)
+		getUserRepos(match.params.login)
 		// eslint-disable-next-line
-	}, []);
+	}, [])
 
-	if (loading) return <Spinner />;
+	if (loading) return <Spinner />
 
 	const {
 		name,
@@ -30,7 +30,7 @@ const User = ({ match }) => {
 		company,
 		bio,
 		hireable
-	} = user;
+	} = user
 
 	return (
 		<Fragment>
