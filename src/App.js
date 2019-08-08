@@ -8,8 +8,8 @@ import Home from './components/pages/Home'
 import NotFound from './components/pages/NotFound'
 import GithubState from './context/github/GithubState'
 import AlertState from './context/alert/AlertState'
-import '@fortawesome/fontawesome-free/css/all.min.css'
-import './App.css'
+import(/* webpackPreload: true */ '@fortawesome/fontawesome-free/css/all.min.css')
+import(/* webpackPreload: true */ './App.css')
 
 const App = () => {
 	return (
