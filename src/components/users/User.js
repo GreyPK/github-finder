@@ -28,16 +28,12 @@ const User = ({ match }) => {
 		public_gists,
 		location,
 		company,
-		bio,
-		hireable
+		bio
 	} = user
 
 	return (
 		<Fragment>
 			<Link to='/' className="btn btn-light">Back to Search</Link>
-			Hirable:
-				{hireable ? <i className="fas fa-check text-success" /> :
-				<i className="fas fa-times-circle text-danger" />}
 
 			<div className="card grid-2">
 				<div className="all-center">
