@@ -275,6 +275,8 @@ img {
 .bg-light,
 .badge-light,
 .alert-light {
+	display: flex;
+	align-items: center;
 	background: var(--light-color);
 	color: #333;
 }
