@@ -7,7 +7,7 @@ const Alert = () => {
 
 	return (
 		alert !== null && (
-			<div className={`alert alert-${alert.type}`}>
+			<div className={`alert alert-${alert.type}`} style={{ display: 'flex', alignItems: 'center' }}>
 				<AlertIcon fill="#333" width="18px" style={{ paddingRight: '5px' }} />
 				{alert.msg}
 			</div>
